@@ -53,7 +53,7 @@ class Portfolio extends React.Component {
             autoplay={true}
           >
           
-            <div class="item">
+            <div className="item">
               <a href="https://youtu.be/KagSYDK1y5U" target="_blank">
                 <div className="portfolio-cards">
                   <div>
@@ -69,7 +69,7 @@ class Portfolio extends React.Component {
               </a>
             </div>
 
-            <div class="item">
+            <div className="item">
               <a href="https://www.youtube.com/watch?v=MnDKt44GFTw" target="_blank">
                 <div className="portfolio-cards">
                   <div>
@@ -85,7 +85,7 @@ class Portfolio extends React.Component {
                 </div>
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="https://www.youtube.com/watch?v=llLGjbvcIwY" target="_blank">
                 <div className="portfolio-cards">
                   <div>
@@ -101,7 +101,7 @@ class Portfolio extends React.Component {
                 </div>
               </a>
             </div>
-            <div class="item">
+            <div className="item">
               <a href="https://github.com/feed-mina/MIMO" target="_blank">
                 <div className="portfolio-cards">
                   <div>

@@ -93,7 +93,7 @@ function Navbar() {
               </Link>
             </h2>
             <a title="cick again to close">
-              <i onClick={() => setOpen(!open)} class="fas fa-bars "></i>
+              <i onClick={() => setOpen(!open)} className="fas fa-bars "></i>
             </a>
           </div>
         </nav>

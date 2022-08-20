@@ -27,7 +27,7 @@ function Me() {
               target="_blank"
               className="iconBtn"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             
           </div>
