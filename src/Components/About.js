@@ -1,7 +1,7 @@
 import React from "react";
 import "./Stylesheet.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import hira from "../Components/Assests/minaPortfolio.pdf";
+import mina from "../Components/Assests/minaPortfolio.pdf";
 import {
   DiPhotoshop,
   DiIllustrator,
@@ -41,7 +41,7 @@ class About extends React.Component {
                 skills. I've also served as a project manager for more than a
                 year hance aquired sufficient managing skills as well.
               </p>
-              <a href={hira} download target="_blank">
+              <a href={mina} download target="_blank">
                 <button className="btn">Download Resume</button>
               </a>
             </div>
