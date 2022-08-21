@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.30f0f3a2.css",
+    "main.js": "/static/js/main.13bd4d20.js",
+    "static/media/minaPortfolio.pdf": "/static/media/minaPortfolio.7ec618d950467406e35f.pdf",
+    "static/media/Pic.jpg": "/static/media/Pic.e7f6114ad230d339e3c0.jpg",
+    "static/media/four.jpg": "/static/media/four.230f527fa2dbb5153328.jpg",
+    "static/media/two.jpg": "/static/media/two.f7709f836ce34ca00075.jpg",
+    "static/media/oracleImage.jpg": "/static/media/oracleImage.7cd5fe7128fc35aa8b67.jpg",
+    "index.html": "/index.html",
+    "main.30f0f3a2.css.map": "/static/css/main.30f0f3a2.css.map",
+    "main.13bd4d20.js.map": "/static/js/main.13bd4d20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30f0f3a2.css",
+    "static/js/main.13bd4d20.js"
+  ]
+}
