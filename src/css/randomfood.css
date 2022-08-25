@@ -1,0 +1,357 @@
+/*fade in effect*/
+body {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    overflow: hidden;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*fade in effect*/ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFBEBB;
+}
+
+.container {
+    padding: 100px;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 4px #AFADDA;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFEFE;
+}
+/*header start*/
+#header {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 50px;
+    background-color: #8CC0DE;
+    width: 100vw;
+}
+
+    #header h3 {
+        display: block;
+        padding: 5px 0 0 30px;
+    }
+
+#logo {
+    width: 25px;
+    vertical-align: middle;
+}
+
+#header_link {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    vertical-align: middle;
+}
+
+    #header_link:hover {
+        color: #1B648D;
+    }
+
+    /*header end*/
+
+.heading1 {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    margin: 100px 0 0 0;
+
+    background: #7A76CD;
+    border-radius: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+    .heading1 > h2 {
+        font-style: oblique;
+        font-weight: 700;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        color: #FFFEFE;
+        padding: 5px;
+    }
+
+.heading2 {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    margin: 100px 0 0 0;
+    background: #8EA0BB;
+    border-radius: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+    .heading2 > h2 {
+        font-style: oblique;
+        font-weight: 700;
+        font-size: 30px;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        color: white;
+        flex: auto;
+        padding: 5px;
+    }
+
+.situation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.situationItem {
+    width: 200px;
+    height: 300px;
+    margin-top: 20%;
+    border-radius: 30px;
+    background-color: #FAF0D7;
+    box-shadow: 0px 4px 4px #DFCCCC;
+    text-align: center;
+    align-items: center;
+}
+
+    .situationItem:hover {
+        background-color: #8CC0DE;
+        box-shadow: 0px 4px 4px #8EA0BB;
+    }
+
+    .situationItem:active {
+        background-color: #8CC0DE;
+        transform: translateY(-5%);
+        transform: translateY(5%);
+    }
+
+.situationItem > img {
+    width: 95%;
+}
+
+    .situationItem > a{
+        text-decoration: none;
+        color: #FF908B;
+    }
+
+    .situationItem:hover > a {
+        color: white;
+    }
+
+.result {
+    position: absolute;
+    margin-top: 180px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: #7A76CD;
+
+}
+
+#circle {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #FAF0D7;
+    z-index: 0;
+}
+
+.resultImg {
+    position: absolute;
+    width: 35%;
+    margin: 15% 0 0 0;
+    flex: auto;
+}
+
+
+
+.othermenu {
+    background-color: #FAF0D7;
+    box-shadow: 0px 4px 4px #D6CFCC;
+    border: none;
+    border-radius: 80px;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    margin: 600px 0 0 400px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #BEA397;
+    text-decoration: none;
+}
+
+    .othermenu:hover {
+        background-color: #FFDBDA;
+        color: #FF908B;
+        box-shadow: 0px 4px 4px #DFCCCC;
+    }
+
+    .othermenu:active {
+        transform: translateY(-5%);
+        transform: translateY(5%);
+    }
+
+.replayButton {
+    background-color: #8CC0DE;
+    box-shadow: 0px 4px 4px #8EA0BB;
+    border: none;
+    border-radius: 80px;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    margin: 600px 0 0 -350px;
+    text-align: center;
+}
+
+    .replayButton a {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    .replayButton:hover {
+        background-color: #FFDBDA;
+        color: #FF908B;
+        box-shadow: 0px 4px 4px #DFCCCC;
+    }
+
+    .replayButton:active {
+        transform: translateY(-5%);
+        transform: translateY(5%);
+    }
+
+#responsible_rabbit{
+    visibility:hidden;
+}
+
+
+@media (min-width: 320px) and (max-width:1000px) {
+    .container {
+        padding: 50px 0 0 0;
+    }
+
+    .main {
+        width: 95vw;
+        height: 85vh;
+        min-height: 800px
+    }
+
+
+    .situation {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto 10% auto;
+        height: 600px;
+        position: absolute;
+        top: 130px;
+    }
+
+        .situation img {
+            display: none;
+        }
+
+    .situationItem {
+        width: 80%;
+        height: 70px;
+        margin-top: 0%;
+        border-radius: 20px;
+    }
+
+    #responsible_rabbit {
+        visibility: visible;
+        position: absolute;
+        width: 300px;
+        bottom: 0vh;
+        right: 0vw;
+    }
+
+    .resultImg {
+        width: 450px;
+        margin: 200px 0 0 0;
+    }
+
+    .replayButton, .othermenu {
+        width: 80%;
+        border-radius: 20px;
+        height: 50px;
+      
+    }
+
+    .replayButton {
+        top: 50px;
+        margin: 600px 0 0 0px;
+    }
+
+    .othermenu {
+        top: 130px;
+        margin:600px 0 0 0px;
+    }
+

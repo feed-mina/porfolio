@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import "./Stylesheet.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Me from "./Me";
 import About from "./About";
 import Contact from "./Contact";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
+import Main from "../pages/main";
+import Question from "../pages/question";
+import QuestionResult from "../pages/QuestionResult";
+import Story from "../pages/Story";
+import StoryResult from '../pages/StoryResult';
+import Storystart from "../pages/Storystart";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,14 +25,14 @@ function Navbar() {
           >
             <li>
               <Link
-                to="/about"
+                to="/main"
                 style={{
                   color: "black",
                   fontSize: "20px",
                   textDecoration: "none"
                 }}
               >
-                About
+                main
               </Link>
             </li>
             <li>
@@ -51,31 +56,31 @@ function Navbar() {
                   textDecoration: "none"
                 }}
               >
-              Yerin's Portfolio
+              밥꾹 테스트 nav
               </Link>
             </li>
             <li>
               <Link
-                to="/portfolio"
+                to="/question"
                 style={{
                   color: "black",
                   fontSize: "20px",
                   textDecoration: "none"
                 }}
               >
-                display
+                question
               </Link>
             </li>
             <li>
               <Link
-                to="/contact"
+                to="/story"
                 style={{
                   color: "black",
                   fontSize: "20px",
                   textDecoration: "none"
                 }}
               >
-                Contact
+                story
               </Link>
             </li>
           </ul>
@@ -99,21 +104,18 @@ function Navbar() {
         </nav>
 
         <Switch>
-          <Route exact path="/">
-            <Me />
-          </Route>
-          <Route exact path="/services">
-            <Services />
-          </Route>
-          <Route exact path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
+          <Route exact path="/" element={<Main/>}/>
+     
+          {/* <Route exact path="/question" element={  <Question/>}/> */}
+        
+          <Route exact path="/story" element={<Story/>}/>
+          
+          <Route exact path="/stroyresult" element={<StoryResult/>}/>
+  
+          <Route exact path="/questionresult" element={   <QuestionResult/>}/>
+        
+          <Route exact path="/start" element={ <Storystart/>}/>
+
         </Switch>
       </div>
     </Router>
